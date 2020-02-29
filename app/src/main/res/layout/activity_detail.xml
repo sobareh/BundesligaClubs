@@ -8,51 +8,77 @@
     tools:context=".DetailActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/bayern"
+        android:id="@+id/image_club"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center" />
+        android:src="@drawable/hoffenheim" />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_margin="10dp">
         <TableRow>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Club :"
+                android:text="@string/nama_club"
                 android:padding="5dp"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textSize="14sp" />
             <TextView
+                android:id="@+id/tv_club_name"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="FC Bayern Munchen"
+                android:layout_height="wrap_content"
+                android:text="@string/fc_bayern_munchen"
                 android:padding="5dp"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
         </TableRow>
         <TableRow>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tahun Berdiri :"
+                android:text="@string/tahun_berdiri"
                 android:padding="5dp"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textSize="14sp" />
 
+            <TextView
+                android:id="@+id/tv_born_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_februari_1900"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4 Februari 1900"
+                android:text="@string/nama_pelatih"
                 android:padding="5dp"
-                android:textSize="14sp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_coach_club"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_februari_1900"
+                android:padding="5dp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
         </TableRow>
-
     </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_detail_club"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="@string/detail_ini_club"
+        android:textSize="16dp"/>
 
 
 
